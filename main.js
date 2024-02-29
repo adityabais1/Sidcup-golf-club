@@ -281,7 +281,6 @@ window.addEventListener("scroll", function(){
     else{
         toggleNav.style.top = "-100px"
     }
-    console.log(this.window.scrollY)
 });
 
 toggleNav.addEventListener("mouseenter", function(){
@@ -324,7 +323,6 @@ quoteContent.innerHTML = "Golf is a game of precision, patience, and passion. Le
 
 setInterval(function(){
     let randomNum = Math.floor(Math.random()*8);
-    console.log(randomNum);
     quoteContent.innerHTML = quoteArr[randomNum].quote;
 
 
@@ -346,8 +344,4 @@ window.addEventListener("scroll", function(){
     else{
         video.style.display = "block"
     }
-    console.log(this.window.scrollY)
 });
-
-
-

@@ -3,15 +3,19 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: default;
 }
 body {
   height: 100%;
   width: 100%;
+  background-color: black;
 }
-body::-webkit-scrollbar{
-    display: none;
+body::-webkit-scrollbar {
+  display: none;
+}
+.canvas{
+  overflow: hidden;
 }
 .nav {
   height: 120px;
@@ -108,7 +112,7 @@ body::-webkit-scrollbar{
   width: 100%;
   text-align: center;
   line-height: 250px;
-  
+
   overflow: hidden;
 
   -webkit-text-stroke: 1px white;
@@ -127,7 +131,6 @@ body::-webkit-scrollbar{
 
 .dynamictxt .scroll-in span {
   color: rgb(0, 0, 0);
-
 }
 
 .dynamictxt .scroll-in span:hover {
@@ -140,7 +143,6 @@ body::-webkit-scrollbar{
   justify-content: flex-start;
   text-wrap: nowrap;
   gap: 50px;
-
 }
 
 .innersec {
@@ -180,8 +182,6 @@ body::-webkit-scrollbar{
   padding: 40px 0;
 }
 
-
-
 /* card sec starts here */
 
 .cardSec {
@@ -208,16 +208,15 @@ body::-webkit-scrollbar{
   z-index: 10;
 }
 
-
-.card h4{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 800;
+.card h4 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
 }
-.card h3{
-    font-weight: 800;
-    font-size: 16px;
-    text-transform: uppercase;
+.card h3 {
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .card:hover {
@@ -235,263 +234,262 @@ body::-webkit-scrollbar{
   background-image: url("https://img.freepik.com/free-photo/personal-trainer-giving-lesson-young-male-golfer_171337-6505.jpg?w=996&t=st=1704127490~exp=1704128090~hmac=946b02516694441310e03b215a87f5d9c56e88830f44bf66f31d887a664b22e0");
 }
 
-.bg-elem1{
-    height: 190px;
-    position: absolute;
-    top: -70px;
-    left: 110px;
-    filter: invert();
-    opacity: 0.6;
+.bg-elem1 {
+  height: 190px;
+  position: absolute;
+  top: -70px;
+  left: 110px;
+  filter: invert();
+  opacity: 0.6;
 }
 
-
-.overlay{
-    position: absolute;
-    top: 0%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(170, 255, 0);
-    transform: scale(0) translateZ(20px);
-    transition: all 0.1s ease-in-out;
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(170, 255, 0);
+  transform: scale(0) translateZ(20px);
+  transition: all 0.1s ease-in-out;
 }
-.card:hover .overlay{
-    transform: scale(1) translateZ(20px);
-}
-
-.overlay h4{
-    color: black;
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
-    padding-top: 150px;
-}
-.overlay p{
-    color: black;
-    font-size: 13px;
-    text-align: center;
+.card:hover .overlay {
+  transform: scale(1) translateZ(20px);
 }
 
-.card .card-arrow{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -30px;
-    right: -30px;
+.overlay h4 {
+  color: black;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 150px;
 }
-.card .card-arrow i{
-    font-size: 24px;
-    color: black;
+.overlay p {
+  color: black;
+  font-size: 13px;
+  text-align: center;
 }
 
-
-
-.newsletter-sec{
-    height: 200px;
-    width: 100%;
-    background: linear-gradient(45deg, rgb(234, 255, 0),rgb(191, 255, 0), rgb(98, 255, 0));
-    display: flex;
-    justify-content: space-between;
+.card .card-arrow {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+  right: -30px;
 }
-.newsletter-sec img{
-    height: 100%;
-    filter: invert();
-}
-#rotate{
-    rotate: 180deg;
-}
-.newsletter-sec h3{
-    width: 50%;
-    color: black;
-    font-size: 26px;
-    font-weight: 900;
-    text-align: center;
-    margin: auto 0;
-}
-.food-drink{
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    padding: 100px;
-    display: flex;
-    position: relative;
-}
-.food-drink .sub-part{
-    /* border: 1px solid white; */
-    height: 70vh;
-    width: 50%;
-    z-index: 10;
+.card .card-arrow i {
+  font-size: 24px;
+  color: black;
 }
 
-.imagePanel{
-    height: 90%;
-    width: 100%;
-    /* background-color: pink; */
-    border-radius: 10px;
-    overflow: hidden;
+.newsletter-sec {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    rgb(234, 255, 0),
+    rgb(191, 255, 0),
+    rgb(98, 255, 0)
+  );
+  display: flex;
+  justify-content: space-between;
 }
-.imagePanel img{
+.newsletter-sec img {
+  height: 100%;
+  filter: invert();
+}
+#rotate {
+  rotate: 180deg;
+}
+.newsletter-sec h3 {
+  width: 50%;
+  color: black;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  margin: auto 0;
+}
+.food-drink {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  padding: 100px;
+  display: flex;
+  position: relative;
+}
+.food-drink .sub-part {
+  /* border: 1px solid white; */
+  height: 70vh;
+  width: 50%;
+  z-index: 10;
+}
+
+.imagePanel {
+  height: 90%;
+  width: 100%;
+  /* background-color: pink; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+.imagePanel img {
   object-position: 0 -150px;
   object-fit: cover;
   width: 100%;
 }
-.imgChngBtns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
+.imgChngBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
 }
-.imgChngBtns .btn{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    /* border: 3px solid rgb(119, 165, 27); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imgChngBtns .btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  /* border: 3px solid rgb(119, 165, 27); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.imgChngBtns .btnInn{
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgb(187, 187, 187);
+.imgChngBtns .btnInn {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(187, 187, 187);
 }
-#txtPart-foodDrink{
-    padding: 50px;
+#txtPart-foodDrink {
+  padding: 50px;
 }
-#txtPart-foodDrink h3{
-    text-transform: uppercase;
-    font-size: 35px;
-    font-weight: 900;
-    margin-top: 100px;
+#txtPart-foodDrink h3 {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 900;
+  margin-top: 100px;
 }
-#txtPart-foodDrink p{
-    font-size: 14px;
-    margin-top: 10px;
+#txtPart-foodDrink p {
+  font-size: 14px;
+  margin-top: 10px;
 }
-.coffeeShopBtn{
-    border: 2px solid rgb(170, 255, 0);   
-    display: inline-block;
-    padding: 5px 30px;
-    margin-top: 40px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
+.coffeeShopBtn {
+  border: 2px solid rgb(170, 255, 0);
+  display: inline-block;
+  padding: 5px 30px;
+  margin-top: 40px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-.coffeeShopBtn:hover{
-    animation: smoothShake 3s infinite ease-in-out;
+.coffeeShopBtn:hover {
+  animation: smoothShake 3s infinite ease-in-out;
 }
 
 @keyframes smoothShake {
-  0%{
+  0% {
     rotate: -5deg;
     transition: rotate 0.5s linear;
   }
-  50%{
+  50% {
     rotate: 5deg;
     transition: rotate 0.5s linear;
   }
-  100%{
+  100% {
     rotate: -5deg;
     transition: rotate 0.5s linear;
   }
 }
 
-
-.food-drink .bg-elem3{
-    position: absolute;
-    height: 150px;
-    top: 65vh;
-    left: 60px;
-    z-index: 9;
+.food-drink .bg-elem3 {
+  position: absolute;
+  height: 150px;
+  top: 65vh;
+  left: 60px;
+  z-index: 9;
 }
-.food-drink .bg-elem3 img{
-    height: 100%;
-    filter: invert();
+.food-drink .bg-elem3 img {
+  height: 100%;
+  filter: invert();
 }
-.msgToFlwOnInsta{
-    height: 20vh;
-    width: 100%;
-    background-color: black;
-    padding: 30px 150px;
+.msgToFlwOnInsta {
+  height: 20vh;
+  width: 100%;
+  background-color: black;
+  padding: 30px 150px;
 }
-.msg{
-    transform: rotate(-10deg);
-    /* display: inline-block; */
-    float: right;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-
-.quoteSec{
-    height: 80vh;
-    width: 100%;
-    background-color: black;
-    padding: 70px;
-    display: flex;
-}
-.quoteMark{
-    width: 10%;
-    height: 100%;
-    position: relative;
-}
-.quoteMark img{
-    width: 100%;
-    transform: scale(0.5);
-    position: absolute;
-    transition: all 0.3s linear;
-}
-.quoteMark:last-child{
-    rotate: 180deg;
-}
-.quote{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 0 200px;
-    font-size: 28px;
-    font-weight: 700;
-    word-spacing: 5px;
+.msg {
+  transform: rotate(-10deg);
+  /* display: inline-block; */
+  float: right;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.lastSec{
-    height: 60vh;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    position: relative;
-
+.quoteSec {
+  height: 80vh;
+  width: 100%;
+  background-color: black;
+  padding: 70px;
+  display: flex;
+}
+.quoteMark {
+  width: 10%;
+  height: 100%;
+  position: relative;
+}
+.quoteMark img {
+  width: 100%;
+  transform: scale(0.5);
+  position: absolute;
+  transition: all 0.3s linear;
+}
+.quoteMark:last-child {
+  rotate: 180deg;
+}
+.quote {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 200px;
+  font-size: 28px;
+  font-weight: 700;
+  word-spacing: 5px;
 }
 
-.staticCard{
-    margin-top: 20vh;
-    height: 170px;
-    width: 25%;
-    background-color: rgb(170, 255, 0);
-    border-radius: 30px;
-    /* display: flex; */
-    font-size: 36px;
-    font-weight: 800;
-    color: black;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.5s ease-in-out;
-    position: relative;
-    overflow: hidden;
-    z-index: 9;
-  }
-  .staticCard::before{
+.lastSec {
+  height: 60vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+
+.staticCard {
+  margin-top: 20vh;
+  height: 170px;
+  width: 25%;
+  background-color: rgb(170, 255, 0);
+  border-radius: 30px;
+  /* display: flex; */
+  font-size: 36px;
+  font-weight: 800;
+  color: black;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+.staticCard::before {
   text-align: center;
   line-height: 170px;
   position: absolute;
@@ -506,38 +504,35 @@ body::-webkit-scrollbar{
   pointer-events: none;
   transition: all 0.5s ease-in-out;
 }
-.staticCard:hover::before{
+.staticCard:hover::before {
   background-color: rgba(0, 0, 0, 0.484);
   color: rgba(255, 255, 255, 0);
   -webkit-text-stroke: 2px white;
 }
-#stCrd1::before{
+#stCrd1::before {
   content: "toptracer range";
 }
-#stCrd2::before{
+#stCrd2::before {
   content: "golf lessons";
 }
-#stCrd3::before{
+#stCrd3::before {
   content: "adventure golf";
 }
-#stCrd1::before{
+#stCrd1::before {
   content: "toptracer range";
 }
 
-#stCrd1:hover{
+#stCrd1:hover {
   background-image: url("https://s3.topgolf.com/uploads/toptracer/site/toptracer-home-image-tv-1920x1080.jpg?resize.width=800");
 }
-#stCrd2:hover{
+#stCrd2:hover {
   background-image: url("https://img.freepik.com/free-photo/personal-trainer-giving-lesson-young-male-golfer_171337-6505.jpg?w=996&t=st=1704127490~exp=1704128090~hmac=946b02516694441310e03b215a87f5d9c56e88830f44bf66f31d887a664b22e0");
-  
 }
-#stCrd3:hover{
+#stCrd3:hover {
   background-image: url("https://images.pexels.com/photos/410859/pexels-photo-410859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
-
-
-.bg-text{
+.bg-text {
   position: absolute;
   top: 80px;
   font-size: 80px;
@@ -547,101 +542,107 @@ body::-webkit-scrollbar{
   -webkit-text-stroke: 2px white;
 }
 
-.footer{
+.footer {
   height: 40vh;
   width: 100%;
-  background: linear-gradient(45deg, rgb(234, 255, 0),rgb(191, 255, 0), rgb(98, 255, 0));
+  background: linear-gradient(
+    45deg,
+    rgb(234, 255, 0),
+    rgb(191, 255, 0),
+    rgb(98, 255, 0)
+  );
   position: relative;
   overflow: hidden;
 }
-.footer .bg-elem2{
+.footer .bg-elem2 {
   height: 100%;
   position: absolute;
   z-index: 0;
 }
 
-.footer .part1{
+.footer .part1 {
   height: 75%;
-  padding: 40px 100px  40px 100px;
+  padding: 40px 100px 40px 100px;
   display: flex;
 }
 
-.footer .part1 .block1 img{
+.footer .part1 .block1 img {
   height: 80px;
   display: block;
   margin: 0 auto;
 }
-.block1{
+.block1 {
   width: 15%;
   height: 100%;
   z-index: 5;
 }
-.smIcons i{
+.smIcons i {
   color: black;
   font-size: 22px;
 }
-.smIcons{
+.smIcons {
   margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
-.block2 , .block3{
+.block2,
+.block3 {
   width: 30%;
   height: 100%;
 }
-.block2 h4 , .block3 h4{
+.block2 h4,
+.block3 h4 {
   color: black;
   font-size: 24px;
   font-weight: 800;
   padding-left: 100px;
   line-height: 45px;
 }
-.block4{
+.block4 {
   width: 25%;
   height: 100%;
 }
-.block4 .address{
+.block4 .address {
   color: black;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
 }
-.block4 .address span{
+.block4 .address span {
   font-size: 15px;
   font-weight: 800;
   color: black;
 }
 
-
-.part2{
+.part2 {
   height: 25%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
 }
-.part2 .block1-prt2{
+.part2 .block1-prt2 {
   display: flex;
   align-items: center;
 }
-.part2 .block1-prt2 p{
+.part2 .block1-prt2 p {
   color: black;
   font-size: 12px;
   cursor: pointer;
   z-index: 12;
 }
-.part2 .block1-prt2 p:first-of-type{
+.part2 .block1-prt2 p:first-of-type {
   cursor: default;
 }
-.part2 .block1-prt2 .breakLine{
+.part2 .block1-prt2 .breakLine {
   height: 15px;
   width: 1px;
   background-color: black;
   margin: 0 15px;
 }
-.part2 .block2-prt2{
+.part2 .block2-prt2 {
   color: black;
   font-size: 12px;
   display: flex;
@@ -649,11 +650,11 @@ body::-webkit-scrollbar{
   font-weight: 500;
 }
 
-.canvas{
+.canvas {
   position: relative;
   scroll-behavior: smooth;
 }
-.crsrCrcl{
+.crsrCrcl {
   z-index: 1;
   position: absolute;
   height: 20px;
@@ -661,11 +662,11 @@ body::-webkit-scrollbar{
   background-color: yellowgreen;
   transition: all 0.2s linear;
   border-radius: 50%;
-  box-shadow: 0px 0px  1000px 100px rgba(191, 255, 0, 0.282);
+  box-shadow: 0px 0px 1000px 100px rgba(191, 255, 0, 0.282);
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
-.toggle-nav{
+.toggle-nav {
   width: 50%;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.356);
@@ -684,18 +685,18 @@ body::-webkit-scrollbar{
   transform: translateX(-50%);
   transition: all 0.5s linear;
 }
-.toggle-nav div{
+.toggle-nav div {
   font-weight: 600;
   color: black;
   transition: all 0.2s linear;
 }
-.toggle-nav div:hover{
+.toggle-nav div:hover {
   color: yellowgreen;
   text-shadow: 0 0 10px rgba(153, 205, 50, 0.774);
   cursor: pointer;
 }
 
-.scroll-y{
+.scroll-y {
   height: 100vh;
   width: 10px;
   background-color: rgb(181, 181, 181);
@@ -706,7 +707,7 @@ body::-webkit-scrollbar{
   border-left: 2px solid rgb(30, 30, 30);
   /* position: relative; */
 }
-.scroll-y .scroll-bar{
+.scroll-y .scroll-bar {
   height: 100px;
   width: 100%;
   border-radius: 5px;
